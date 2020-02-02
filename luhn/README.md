@@ -10,6 +10,7 @@ Numbers.
 The task is to check if a given string is valid.
 
 Validating a Number
+
 ------
 
 Strings of length 1 or less are not valid. Spaces are allowed in the input,
