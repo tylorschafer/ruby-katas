@@ -1,3 +1,5 @@
+require 'pry'
+
 class Integer
   def numerals
     {
@@ -15,6 +17,8 @@ class Integer
     numerals.each do |numeral, value|
       if value === self
         return numeral.to_s
+      elsif value * 3 == self || value * 2 == self
+        return numeral.to_s * self
       end
     end
   end
