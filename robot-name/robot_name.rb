@@ -3,7 +3,7 @@ require 'pry'
 class Robot
   @@robots = {}
 
-  attr_reader :name, :letters, :numbers
+  attr_reader :name
 
   def initialize()
     @name = create_name
@@ -27,7 +27,5 @@ class Robot
   end
 
   def self.forget
-
   end
-
 end
