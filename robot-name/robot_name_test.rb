@@ -17,14 +17,12 @@ class RobotTest < Minitest::Test
   end
 
   def test_name_sticks
-    skip
     robot = Robot.new
     original_name = robot.name
     assert_equal original_name, robot.name
   end
 
   def test_reset_changes_name
-    skip
     robot = Robot.new
     original_name = robot.name
     robot.reset
@@ -32,14 +30,12 @@ class RobotTest < Minitest::Test
   end
 
   def test_reset_before_name_called_does_not_cause_an_error
-    skip
     robot = Robot.new
     robot.reset
     assert_match NAME_REGEXP, Robot.new.name
   end
 
   def test_reset_multiple_times
-    skip
     robot = Robot.new
     names = []
     5.times do
@@ -52,13 +48,11 @@ class RobotTest < Minitest::Test
   end
 
   def test_different_robots_have_different_names
-    skip
     refute_equal Robot.new.name, Robot.new.name
   end
 
   # This test assumes you're using Kernel.rand as a source of randomness
   def test_different_name_when_chosen_name_is_taken
-    skip
     same_seed = 1234
     Kernel.srand same_seed
     robot_1 = Robot.new
