@@ -19,6 +19,8 @@ class Integer
         return numeral.to_s
       elsif value * 3 == self || value * 2 == self
         return numeral.to_s * self
+      elsif value - 1 == self
+        return 'I' + numeral.to_s
       end
     end
   end

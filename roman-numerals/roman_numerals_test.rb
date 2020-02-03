@@ -12,12 +12,10 @@ class RomanNumeralsTest < Minitest::Test
   end
 
   def test_3_is_three_i_s
-    skip
     assert_equal 'III', 3.to_roman
   end
 
   def test_4_being_5_1_is_iv
-    skip
     assert_equal 'IV', 4.to_roman
   end
 
