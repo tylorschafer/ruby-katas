@@ -9,12 +9,10 @@ class RobotTest < Minitest::Test
   end
 
   def test_can_create_a_robot
-    skip
     refute_nil Robot.new
   end
 
   def test_has_name
-    skip
     assert_match NAME_REGEXP, Robot.new.name
   end
 
