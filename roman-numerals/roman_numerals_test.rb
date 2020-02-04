@@ -4,42 +4,34 @@ require_relative 'roman_numerals'
 # Common test data version: 1.2.0 3c78ac4
 class RomanNumeralsTest < Minitest::Test
   def test_1_is_a_single_i
-    # skip
     assert_equal 'I', 1.to_roman
   end
 
   def test_2_is_two_i_s
-    skip
     assert_equal 'II', 2.to_roman
   end
 
   def test_3_is_three_i_s
-    skip
     assert_equal 'III', 3.to_roman
   end
 
   def test_4_being_5_1_is_iv
-    skip
     assert_equal 'IV', 4.to_roman
   end
 
   def test_5_is_a_single_v
-    skip
     assert_equal 'V', 5.to_roman
   end
 
   def test_6_being_5_1_is_vi
-    skip
     assert_equal 'VI', 6.to_roman
   end
 
   def test_9_being_10_1_is_ix
-    skip
     assert_equal 'IX', 9.to_roman
   end
 
   def test_20_is_two_x_s
-    skip
     assert_equal 'XXVII', 27.to_roman
   end
 
